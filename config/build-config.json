@@ -1,0 +1,90 @@
+{
+  "vm": {
+    "memory": "8192",
+    "cpus": "4",
+    "diskSize": "150G",
+    "diskFormat": "qcow2",
+    "accelerator": "tcg"
+  },
+  "windows": {
+    "edition": "Pro",
+    "language": "en-US",
+    "timezone": "UTC",
+    "updates": true,
+    "features": {
+      "remoteDesktop": true,
+      "telemetry": "minimal",
+      "cortana": false,
+      "edgeIE": false
+    }
+  },
+  "virtio": {
+    "version": "latest",
+    "components": [
+      "storage",
+      "network", 
+      "balloon",
+      "serial"
+    ],
+    "autoInstall": true
+  },
+  "security": {
+    "firewall": true,
+    "updates": "automatic",
+    "defender": true,
+    "uac": "default"
+  },
+  "performance": {
+    "services": {
+      "disable": [
+        "Fax",
+        "XblAuthManager",
+        "XblGameSave",
+        "XboxNetApiSvc",
+        "XboxGipSvc"
+      ],
+      "manual": [
+        "Windows Search",
+        "Superfetch",
+        "Themes"
+      ]
+    },
+    "startup": {
+      "disableStartupPrograms": true,
+      "fastBoot": true
+    }
+  },
+  "output": {
+    "formats": [
+      "qcow2",
+      "raw"
+    ],
+    "compress": true,
+    "compression": "gzip",
+    "validate": true
+  },
+  "cloud": {
+    "optimizeFor": [
+      "digitalocean",
+      "aws",
+      "azure",
+      "gcp"
+    ],
+    "cloudInit": false,
+    "metadata": {
+      "description": "Windows 10 Pro with VirtIO drivers",
+      "version": "1.0.0",
+      "buildDate": "",
+      "tags": [
+        "windows10",
+        "virtio",
+        "cloud-ready"
+      ]
+    }
+  },
+  "logging": {
+    "level": "info",
+    "logFile": "logs/build.log",
+    "keepLogs": 10
+  }
+}

@@ -1,0 +1,106 @@
+# Ignore ISO files (too large for Git)
+*.iso
+
+# Ignore built images
+*.qcow2
+*.img
+*.vhd
+*.vmdk
+*.gz
+*.zip
+*.tar
+*.7z
+
+# Output directories
+/output/
+/build/
+/temp/
+/cache/
+
+# Driver files
+/drivers/
+!/drivers/.gitkeep
+
+# ISO storage
+/iso/
+!/iso/.gitkeep
+
+# VM snapshots
+*.snapshot
+*.qcow2-tmp
+
+# Logs
+*.log
+logs/
+
+# Windows specific
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# PowerShell
+*.ps1xml
+
+# Temporary files
+*.tmp
+*.temp
+*~
+.#*
+
+# IDE/Editor files
+.vscode/settings.json
+.vscode/launch.json
+.vscode/tasks.json
+.idea/
+*.swp
+*.swo
+*~
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Backup files
+*.bak
+*.backup
+*.old
+
+# Test results
+TestResults/
+*.trx
+*.coverage
+
+# Configuration overrides (keep templates)
+config/local-config.json
+config/user-config.json
+
+# Downloads
+downloads/
+
+# Personal notes
+notes/
+TODO.txt
+NOTES.md
+
+# Credentials and secrets
+*.key
+*.pem
+*.p12
+credentials.json
+secrets.json
+
+# Compressed archives of images
+output/*.gz
+output/*.zip
+output/*.7z
+
+# QEMU monitor files
+*.monitor
+*.qmp
+
+# Virtual machine locks
+*.lock
