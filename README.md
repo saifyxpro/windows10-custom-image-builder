@@ -2,7 +2,7 @@
 
 <div align="center">
 
-![Windows 10 Custom Image Builder](assets/main.png)
+![Windows 10 Custom Image Builder](assets/main.PNG)
 
 ### Professional Windows 10 custom image creation using QEMU with VirtIO drivers for optimal cloud performance
 
